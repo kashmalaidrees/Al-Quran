@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recyclerview"
+    android:background="@drawable/backgrondimg">
+
+    <TextView
+        android:id="@+id/recycleheading"
+        android:layout_width="334dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="40dp"
+        android:text="سٹوڈنٹ ڈیٹا"
+        android:textAlignment="center"
+        android:textColor="#FF9800"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclebox"
+        android:layout_width="385dp"
+        android:layout_height="502dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycleheading" />
+
+    <TextView
+        android:id="@+id/pararecycle"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Para\n#"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycleheading" />
+
+    <TextView
+        android:id="@+id/ayatrecycle"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Ayat\nRange"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/pararecycle"
+        app:layout_constraintTop_toTopOf="@+id/pararecycle" />
+
+    <TextView
+        android:id="@+id/sabkirecycle"
+        android:layout_width="65dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="3dp"
+        android:text="Sabki"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/ayatrecycle"
+        app:layout_constraintTop_toTopOf="@+id/ayatrecycle" />
+
+    <TextView
+        android:id="@+id/manzilrecycle"
+        android:layout_width="80dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="3dp"
+        android:text="Manzil"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/sabkirecycle"
+        app:layout_constraintTop_toTopOf="@+id/sabkirecycle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

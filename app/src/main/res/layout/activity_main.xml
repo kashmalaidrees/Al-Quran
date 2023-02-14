@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrondimg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="327dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="50dp"
+        android:text="القرآن"
+        android:textAlignment="center"
+        android:textColor="#FF9800"
+        android:textColorHighlight="#FF9800"
+        android:textColorHint="#FF9800"
+        android:textSize="96sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="221dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="110dp"
+        android:backgroundTint="#FF9800"
+
+        android:text="Add Student"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appname"
+        app:rippleColor="#716B6B" />
+
+    <Button
+        android:id="@+id/removebtn"
+        android:layout_width="271dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#FF9800"
+        android:text="Delete Student"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addbtn"
+        app:rippleColor="#716B6B" />
+
+    <Button
+        android:id="@+id/viewbtn"
+        android:layout_width="316dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#FF9800"
+        android:text="View All Students"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/removebtn"
+        app:rippleColor="#716B6B" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

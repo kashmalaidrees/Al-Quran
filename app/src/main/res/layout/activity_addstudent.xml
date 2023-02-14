@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrondimg"
+    tools:context=".addstudent">
+
+    <TextView
+        android:id="@+id/addform"
+        android:layout_width="319dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:text="ایڈمشن فارم"
+        android:textAlignment="center"
+        android:textColor="#FF9800"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nametxt"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="65dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#9E9E9E"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addform" />
+
+    <EditText
+        android:id="@+id/rollnotxt"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="65dp"
+        android:ems="10"
+        android:hint="Roll No."
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#9E9E9E"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addform" />
+
+    <EditText
+        android:id="@+id/fathertxt"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="65dp"
+        android:ems="10"
+        android:hint="Contact"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#9E9E9E"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addform" />
+
+    <EditText
+        android:id="@+id/paratxt"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="245dp"
+        android:layout_marginEnd="65dp"
+        android:ems="10"
+        android:hint="Para No"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#9E9E9E"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addform" />
+
+    <TextView
+        android:id="@+id/ayatview"
+        android:layout_width="66dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="36dp"
+        android:text="Ayat#"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paratxt" />
+
+    <EditText
+        android:id="@+id/fromverse"
+        android:layout_width="61dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="124"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#9E9E9E"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/ayatview"
+        app:layout_constraintTop_toBottomOf="@+id/paratxt" />
+
+    <TextView
+        android:id="@+id/toview"
+        android:layout_width="66dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="60sp"
+        app:layout_constraintStart_toEndOf="@+id/fromverse"
+        app:layout_constraintTop_toBottomOf="@+id/paratxt" />
+
+    <EditText
+        android:id="@+id/toverse"
+        android:layout_width="67dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="224"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#9E9E9E"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/toview"
+        app:layout_constraintTop_toBottomOf="@+id/paratxt" />
+
+    <EditText
+        android:id="@+id/sabki"
+        android:layout_width="95dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Sabki"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#9E9E9E"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ayatview" />
+
+    <EditText
+        android:id="@+id/manzil"
+        android:layout_width="95dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="52dp"
+        android:ems="10"
+        android:hint="Manzil"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#9E9E9E"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/sabki"
+        app:layout_constraintTop_toTopOf="@+id/sabki" />
+
+    <Button
+        android:id="@+id/submitbtn"
+        android:layout_width="251dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#FF9800"
+        android:text="Submit"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sabki" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

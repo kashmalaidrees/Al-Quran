@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".Editform">
+
+    <TextView
+        android:id="@+id/editformheading"
+        android:layout_width="311dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="50dp"
+        android:text="EDIT FORM"
+        android:textAlignment="center"
+        android:textColor="#FDFCFC"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="60dp"
+        android:text="Para#"
+        android:textAlignment="center"
+        android:textColor="#FBFAFA"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editformheading" />
+
+    <EditText
+        android:id="@+id/editparano"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="20"
+        android:textAlignment="center"
+        android:textColor="#FBF9F9"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/editheading"
+        app:layout_constraintTop_toBottomOf="@+id/editformheading" />
+
+    <TextView
+        android:id="@+id/editayat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="60dp"
+        android:text="Ayat"
+        android:textAlignment="center"
+        android:textColor="#FDFCFC"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editheading" />
+
+    <EditText
+        android:id="@+id/editayatfrom"
+        android:layout_width="73dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="165"
+        android:textAlignment="center"
+        android:textColor="#FDFCFC"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/editayat"
+        app:layout_constraintTop_toTopOf="@+id/editayat" />
+
+    <TextView
+        android:id="@+id/editheadingto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="TO"
+        android:textAlignment="center"
+        android:textColor="#FBFAFA"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/editayatfrom"
+        app:layout_constraintTop_toTopOf="@+id/editayatfrom" />
+
+    <EditText
+        android:id="@+id/editayatto"
+        android:layout_width="71dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FDFCFC"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/editheadingto"
+        app:layout_constraintTop_toTopOf="@+id/editheadingto"
+        tools:text="165" />
+
+    <TextView
+        android:id="@+id/editsabkiheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="60dp"
+        android:text="Sabki"
+        android:textAlignment="center"
+        android:textColor="#FDFCFC"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editayat" />
+
+    <EditText
+        android:id="@+id/editsabki"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="19"
+        android:textAlignment="center"
+        android:textColor="#FBFAFA"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/editsabkiheading"
+        app:layout_constraintTop_toTopOf="@+id/editsabkiheading" />
+
+    <TextView
+        android:id="@+id/editmanzilheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="60dp"
+        android:text="Manzil"
+        android:textAlignment="center"
+        android:textColor="#FDFCFC"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editsabkiheading" />
+
+    <EditText
+        android:id="@+id/editmanzil"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="22"
+        android:textAlignment="center"
+        android:textColor="#FDFCFC"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/editmanzilheading"
+        app:layout_constraintTop_toTopOf="@+id/editmanzilheading" />
+
+    <Button
+        android:id="@+id/updatebtn"
+        android:layout_width="163dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#FF9800"
+        android:text="UPDATE"
+        android:textAlignment="center"
+        android:textColor="#FBFAFA"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editmanzilheading" />
+</androidx.constraintlayout.widget.ConstraintLayout>
